@@ -1,0 +1,81 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, var(--color0), var(--color1));
+}
+
+.main .w60 {
+    position: relative;
+    max-width: 60%;
+    background: #f00;
+}
+
+.shake {
+    animation: shakeAnim 0.5s forwards;
+}
+
+@keyframes shakeAnim {
+    0% {
+        margin-left: -20px;
+        background: #f005;
+    }
+    20% {
+        margin-left: 10px;
+        background: #f00a;
+    }
+    40% {
+        margin-left: -3px;
+        background: #f005;
+    }
+    60% {
+        margin-left: 5px;
+        background: #f00a;
+    }
+    80% {
+        margin-left: -10px;
+        background: #f005;
+    }
+    100% {
+        margin-left: 0px;
+        background: #f000;
+    }
+}
+
+.main div {
+    text-align: center;
+}
+
+.main h1 {
+    color: #fff8;
+    animation: rotateAndScaleAnim 1s forwards;
+}
+
+@keyframes rotateAndScaleAnim {
+    70%, 100% {
+        rotate: 90deg;
+        font-size: 2.5rem;
+    }
+    80% {
+        font-size: 2.7rem;
+    }
+}
+
+.main a {
+    text-decoration: none;
+    color: #08d;
+}
+
+.main a:hover {
+    color: #0af;
+}
+
+.linkContainer {
+    margin-top: 20px;
+}
+
+.hightlight {
+    color: #f45;
+}

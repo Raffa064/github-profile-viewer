@@ -1,0 +1,64 @@
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, var(--color0), var(--color1));
+}
+
+.centeredContainer {
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePicture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #0006, -2px -2px 10px #fff3;
+}
+
+.marginTop10px {
+    margin-top: 10px;
+}
+
+.main a {
+    text-decoration: none;
+    color: #08d;
+}
+
+.main a:hover {
+    color: #0af;
+}
+
+.main .w60 {
+    max-width: 60%;
+}
+
+a.goBackLink {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+    box-shadow: 2px 2px 10px #0006, -2px -2px 10px #fff3;
+    border-radius: 50%;
+    color: #fff3
+}
+
+a.goBackLink:hover {
+    box-shadow: -2px -2px 10px #0006, 2px 2px 10px #fff3;
+    color: #fff8;
+}
+
+@media (max-width: 450px) {
+    .main .w60 {
+        max-width: 90%;
+    }
+}
